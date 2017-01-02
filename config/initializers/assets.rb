@@ -9,3 +9,17 @@ Rails.application.config.assets.version = '1.0'
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )
+Rails.application.config.assets.precompile += %w( main.js )
+Rails.application.config.assets.precompile += %w( style.min.css )
+Rails.application.config.assets.precompile += %w( owl.carousel.min.css )
+Rails.application.config.assets.precompile += %w( magnific-popup.css )
+Rails.application.config.assets.precompile += %w( font-awesome.min.css )
+Rails.application.config.assets.precompile += %w( animate.min.css )
+Rails.application.config.assets.precompile += %w( tether.min.js )
+Rails.application.config.assets.precompile += %w( jquery.touchwipe.min.js )
+Rails.application.config.assets.precompile += %w( masonry.pkgd.min.js )
+Rails.application.config.assets.precompile += %w( owl.carousel.min.js )
+Rails.application.config.assets.precompile += %w( jquery-migrate-1.4.1.min.js )
+Rails.application.config.assets.precompile += %w( jquery-3.1.1.min.js )
+Rails.application.config.assets.precompile += %w( appear.min.js )
+Rails.application.config.assets.precompile += %w( bootstrap.min.js )

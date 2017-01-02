@@ -1,26 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title> <%= yield(:title) %> </title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-	<div id="sidebar">
-		<div id="logo">
-			<%= link_to root_path do %>
-				<%= image_tag "mk.png" %>
-			<% end %>	
-		</div>
-		<ul>
-			<li class="category">Website</li>
-			<li> <%= link_to "blog", root_path %> </li>
-			<li>About</li>
-		</ul>
+  <head>
+    <title><%= yield(:title) %></title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', 'style.min', 'owl.carousel.min', 'animate.min', 'font-awesome.min', 'magnific-popup', media: 'all',
+                                              'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'main', 'jquery-3.1.1.min', 'tether.min', 'owl.carousel.min', 'masonry.pkgd.min', 'jquery-magnific-popup.min', 'jquery.touchwipe.min', 'jquery-migrate-1.4.1.min', 'appear.min', 'bootstrap.min', 'data-turbolinks-track': 'reload' %>
+    <%= render 'layouts/shim' %>
+  </head>
+  <body>
+    <div class="preloader"><div class="loader"></div></div>
+    <div class="page-box">
+      <%= render 'layouts/headers' %>
 
-	</div>	
-<%= yield %>
-
-</body>
+      <div class="container">
+        <%= yield %>
+        <%= render 'layouts/footer' %>
+      </div>
+    </div>
+  </body>
 </html>
